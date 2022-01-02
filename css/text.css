@@ -1,0 +1,109 @@
+h2{
+    white-space: nowrap;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.header-h2{
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.colorspan {
+    color:rgb(0, 101, 252);
+}
+
+.align {
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.warning {
+    color: red;
+    font-size: 3em;
+}
+
+.zdroj {
+    font-size: 10px;
+}
+
+hr {
+    border-top: 3px double #7284A8;
+}
+
+.omezeni-hr {
+    border-top: 1px solid black;
+}
+
+.warn{
+    box-sizing: border-box;
+    max-width: 500px;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    padding-right: 10px;
+    padding-left: 20px;
+    background-color: #ff5050;
+    transition: 1s background-color;
+    box-shadow: 2px 2px black;
+}
+
+.warn:hover{
+    background-color: #cc0000;
+}
+
+.warn *{
+    text-align: center;
+    transition: 1s color;
+}
+
+.warn *:hover {
+    color: white;
+}
+
+.downImage {
+    display: none;
+}
+
+.href{
+    text-decoration: underline;
+    color: blue;
+    cursor: pointer;
+}
+
+.container-drink h3 {
+    font-size: 25px;
+    color: darkred;
+}
+
+.container-drink h4 {
+    font-size: 22px;
+}
+
+.container-drink ul {
+    padding-left: 20px;
+}
+
+.omezeni:hover {
+    background-color: silver;
+}
+
+@media screen and (max-width: 1600px){
+    .rightImage{
+        display: none;
+    }
+
+    .downImage{
+        float: left;
+        display: block;
+    }
+
+    .row .col-7{
+        flex: content;
+        margin-right: 15px;
+    }
+}

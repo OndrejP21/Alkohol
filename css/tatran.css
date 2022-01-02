@@ -1,0 +1,81 @@
+.tatran {
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+}
+
+.tatran-kokos {
+    background-color: white;
+}
+
+.tatran-citrus {
+    background-color: #33cc33;
+}
+
+.tatran-broskev {
+    background-color: #993d00;
+}
+
+.tatran-original {
+    background-color: #2b303c;
+}
+
+.tatran-lesni {
+    background-color: #660066;
+}
+
+.tatran-zbrojnicky {
+    background-color: #8c8c8c;
+}
+
+.tatran-mleko {
+    background-color: #ffbf80;
+}
+
+.tatran-acai{
+    background-color: #80bfff;
+}
+
+.tatran-ibisek {
+    background-color: #ff80df;
+}
+
+.tatran-kvetovy {
+    background-color: #ffff00;
+}
+
+.tatran-sipek {
+    background-color: #ff6600;
+}
+
+.tatran-jablko {
+    background-color: #ff1a1a;
+}
+
+.tatran-bylinny{
+    background-color: #003300;
+}
+
+.tatran-horky {
+    background-color: #442222;
+}
+
+.tatran-dropdown {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: white;
+}
+
+.tatran-kokos .tatran-dropdown {
+    background-color: black;
+}
+
+.tatran:hover {
+    cursor: pointer;
+}
+
+.tatran:hover .tatran-dropdown {
+    display: inline-block;
+}
+

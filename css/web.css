@@ -1,0 +1,364 @@
+html {
+    scroll-behavior: smooth;
+}
+.container {
+    margin: 5vh 10vw auto 10vw;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    margin-top: 3vh;
+}
+
+.container .row {
+    flex-wrap: wrap;
+}
+
+.no-top-margin { /*for rows*/
+    margin-top: -2vh !important;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    margin-left: 3vw;
+}
+
+.row .col-1 {
+    flex-basis: 8.33%;
+}
+.row .col-2{
+    flex-basis: 16.66%;
+}
+.row .col-3{
+    flex-basis: 25%;
+}
+.row .col-4{
+    flex-basis: 33.33%;
+}
+.row .col-5{
+    flex-basis: 41.66%;
+}
+.row .col-6{
+    flex-basis: 50%;
+}
+.row .col-7{
+    flex-basis: 58.33%;
+}
+.row .col-8{
+    flex-basis: 66.66%;
+}
+.row .col-9{
+    flex-basis: 75%;
+}
+.row .col-10{
+    flex-basis: 83.33%;
+}
+.row .col-11{
+    flex-basis: 91.66%;
+}
+.row .col-12{
+    flex-basis: 100%;
+}
+
+.row .col-1 *, .row .col-2 *, .row .col-3 *, .row .col-4 *, .row .col-5 *, .row .col-6 *, .row .col-7 *, .row .col-8 *, .row .col-9 *, .row .col-10 *, .row .col-11 *, .row .col-12 * {
+    margin-top: 1.5vh;
+}
+
+.column .col-1 *, .column .col-2 *, .column .col-3 *, .column .col-4 *, .column .col-5 *, .column .col-6 *, .column .col-7 *, .column .col-8 *, .column .col-9 *, .column .col-10 *, .column .col-11 *, .column .col-12 * {
+    margin-left: 1.5vw;
+}
+
+.footer {
+    background-color: silver;
+    min-height: 30px;
+    padding: 10px;
+}
+
+.footer .row {
+    margin-top: -1vh;
+}
+
+#up{
+    margin-top: 5px;
+    float: right;
+}
+
+#up:hover {
+    cursor: pointer;
+}
+
+#blocks {
+    position: fixed;
+    top: 10%;
+    bottom: 0;
+    right: 20vw;
+    overflow:hidden;
+    width: 270px;
+    white-space:unset;
+}
+
+#blocks a {
+    text-decoration: none;
+    color: black;
+}
+
+.block {
+    margin-bottom: 5vh;
+    border: 4px outset #7284A8;
+    padding: 10px;
+    background-color: #7284A8;
+    box-shadow: 1px 1px #909090;
+    text-decoration: none;
+    height: 200px;
+}
+
+.block:hover {
+    background-color: #3366cc;
+}
+
+#blocksunder {
+    display: none;
+    margin-bottom: 2vh;
+}
+
+#blocksunder a {
+    text-decoration: none;
+    color: black;
+}
+
+.blockunder {
+    margin-top: 10px;
+    border: 4px outset #7284A8;
+    padding: 10px;
+    background-color: #7284A8;
+    box-shadow: 1px 1px #909090;
+}
+
+.blockunder:hover {
+    background-color: #3366cc;
+}
+
+.container-drink {
+    border: 1px solid black;
+    padding: 10px;
+    box-shadow: 1px 1px black;
+}
+
+.container-drink .col-6:not(.no-top-margin .col-6):hover {
+    background-color: silver;
+}
+
+#img-kocovina{
+height: 400px;
+width: 700px;
+}
+
+.wrap {
+    height: 100px;
+}
+
+@media only screen and (max-height: 800px){
+    #blocks {
+        display: none;
+    }
+
+    #blocksunder {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .blockunder{
+        margin-left: 10px;
+        height: 150px;
+        width: 270px;
+        flex: 33%;
+    }
+
+}
+
+@media only screen and (max-width: 600px){
+    .container {
+        margin: 0;
+    }
+
+    #img-kocovina{
+        height: 150px;
+        width: 262px;
+    }
+
+    .header-h2 {
+        font-size: 20px;
+    }
+
+    #blocks {
+        display: none;
+    }
+
+    .warning{
+        font-size: 20px;
+    }
+
+    #blocksunder {
+        display: block;
+        width: 270px;
+        float: none;
+    }
+
+    .blockunder{
+        height: 140px;
+    }
+
+    .col-blocks {
+        display: none;
+    }
+
+    .wrap {
+        display: none;
+    }
+
+    .col-small {
+        width: 90vw;
+        flex: content;
+    }
+
+    .warn {
+        margin-left: -10px;
+    }
+
+    hr {
+        max-width: 600px;
+    }
+
+    #image-rum {
+        height: 180px;
+        width: 290px;
+    }
+
+    #image-tatran {
+        height: 160px;
+        width: 290px;
+    }
+
+    #image-spotreba {
+        height: 200px;
+        width: 300px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .col-wrap {
+        flex-basis: 100% !important;
+        border: 1px solid black;
+    }
+
+    .container-drink {
+        border: none;
+        box-shadow: none;
+    }
+
+    .align {
+        font-size: 15px;
+    }
+
+    .col-delete{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 992px){
+    .container {
+        margin: 0;
+    }
+
+    #img-kocovina{
+        height: 300px;
+        width: 450px;
+    }
+
+    .header-h2 {
+        font-size: 25px;
+    }
+
+    .warning{
+        font-size: 25px;
+    }
+
+    #blocks {
+        display: none;
+    }
+    
+    #blocksunder {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 270px;
+    }
+
+    .blockunder{
+        margin-left: 10px;
+        height: 140px;
+        flex: 50%;
+    }
+
+    .col-blocks {
+        display: none;
+    }
+
+    .col-small {
+        width: 90vw;
+        flex: content;
+    }
+    
+    .wrap {
+        display: none;
+    }
+
+    .container-drink {
+        border: none;
+        box-shadow: none;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1700px){
+    .container {
+        margin: 0 0 0 5vw;
+    }
+    .col-blocks {
+        display: none;
+    }
+
+    #blocks {
+        display: none;
+    }
+
+    #blocksunder {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .blockunder{
+        margin-left: 10px;
+        width: 270px;
+        height: 150px;
+        flex: 33%;
+    }
+
+    .col-small {
+        width: 90vw;
+        flex: content;
+    }
+    
+    .wrap {
+        display: none;
+    }
+}
+
+
+
+

@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="cs-CZ">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Alkohol, Pivo, Víno, Likér, Lihovina, Destilát, Burčák, Drink, Nápoj">
+    <meta name="description" content="Web o alkoholu, jeho úskalích, míchaných nápojích a informacích o tom, jak je to s alkoholem ve světě.">
+    <meta name="author" content="Ondřej Petera">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/web.css">
+    <link rel="stylesheet" href="../css/text.css">
+    <link rel="stylesheet" href="../css/tatran.css">
+    <link rel="stylesheet" href="../css/table.css">
+    <link rel="stylesheet" href="../css/table2.css">
+    <link rel="shortcut icon" href="../img/icon.png">
+    <title>Alkohol</title>
+
+    <script src="https://kit.fontawesome.com/0f35a080ae.js" crossorigin="anonymous"></script>
+    <script src="../javascript/script.js"></script>
+    <script src="../javascript/scrolls.js"></script>
+    <script src="../javascript/menu.js"></script>
+
+</head>
+<body>
+  <div id="nav-clicked">
+    <div class="row no-top-margin nav-clicked-1">
+        <div class="col-1">
+            <img src="../img/icon.png" alt="icon" id="icon" width="50" height="50"/>
+        </div>
+
+        <div class="col-6">
+            <h1>Alkohol a vše o něm</h1>
+        </div>
+
+        <div class="col-5">
+            <i class="fas fa-level-up-alt fa-3x" id="nav-clicked-button"></i>
+        </div>
+    </div>
+
+    <div class="row nav-clicked-2">
+        <nav>
+            <ul>
+                <li><a href="../">Úvod</a></li>
+                <li>
+                  <div id="alkohol-block">
+                      <div class="alkohol-block-1">
+                        <a href="#" class="active">Alkohol</a>
+                      </div>
+                      <div class="alkohol-block-2">
+                          <i class="fas fa-arrow-down fa-lg" id="nav-clicked-alkohol"></i>
+                      </div>
+                  </div>
+
+                <div id="alkohol-clicked">
+                  <a class="noline" onclick="ScrollPivo()">Pivo</a>
+                  <a class="noline" onclick="ScrollVino()">Víno</a>
+                  <a class="noline" onclick="ScrollLihoviny()">Lihoviny</a>
+                  <a class="noline" onclick="ScrollKonak()">Koňak</a>
+                  <a class="noline" onclick="ScrollMedovina()">Medovina</a>
+                  <a class="noline" onclick="ScrollBurcak()">Burčák</a>
+                  <a class="noline" onclick="ScrollLiker()">Likéry</a>
+                </div>
+              </li>
+                <li><a href="../drinky">Drinky</a></li>
+                <li><a href="../svet">Alkohol ve světě</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+    <div id="navbar">
+        <div class="navbar-1">
+            <img src="../img/icon.png" alt="icon" id="icon" width="50" height="50"/>
+            <h1>Alkohol a vše o něm</h1>
+        </div>
+
+        <div class="navbar-2">
+            <nav>
+                <ul>
+                    <li><a href="../svet">Alkohol ve světě</a></li>
+                    <li><a href="../drinky">Drinky</a></li>
+                    <li class="dropdown">
+                        <a href="../alkohol" class="active">Alkohol</a>
+                        <div class="dropdown-content">
+                          <a class="noline" onclick="ScrollPivo()">Pivo</a>
+                          <a class="noline" onclick="ScrollVino()">Víno</a>
+                          <a class="noline" onclick="ScrollLihoviny()">Lihoviny</a>
+                          <a class="noline" onclick="ScrollKonak()">Koňak</a>
+                          <a class="noline" onclick="ScrollMedovina()">Medovina</a>
+                          <a class="noline" onclick="ScrollBurcak()">Burčák</a>
+                          <a class="noline" onclick="ScrollLiker()">Likéry</a>
+                        </div>
+                    </li>
+                    <li><a href="../">Úvod</a></li>
+                </ul>
+            </nav>
+
+            <i class="fas fa-bars fa-lg" id="button"></i>
+        </div>
+
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-3">
+                <h2 class="header-h2">Alkohol</h2>
+            </div>
+            <div class="col-9">
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-8">
+                <div class="row no-top-margin">
+                  <div class="col-12 col-small">
+                    <p>Na této stránce si můžete přečíst o všemožných druzích alkoholu, o jejich specifikacích a doporučeních k jejich pití a možným kombinacím s jinými nealkoholickými nápoji.</p>
+                  </div>
+                </div>
+                <hr>
+
+                <div class="row" id="pivo">
+                    <div class="col-7 col-small">
+                        <h2>Pivo</h2>
+                        <p>Pivo je jedním z nejoblíbenějších nápojů nás Čechů, stalo se vlastně takovým naším symbolem. V roce 2019 dokonce bylo zjištěno, že se u nás vypije ročně 188,6 litrů piva na osobu. S tím si držíme prvenství na celém světě!</p>
+                        <table border="0">
+                            <tr>
+                                <td><strong>Důležité ingredience:</strong></td>
+                                <td>obilný slad, voda, chmel, pivovarské kvasinky</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Vznik:</strong></td>
+                                <td>Mezopotámie – 7. tisíciletí př. n. l.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Procentuální obsah alkoholu:</strong></td>
+                                <td>2% – 7 % (zpravidla) </td>
+                            </tr>
+                        </table>
+                        <br>
+                        <p>Druhy piva:</p>
+                        <ul class="responsive-table">
+                            <li class="table-header">
+                              <div class="col col-1">Druh</div>
+                              <div class="col col-2">Procento alkoholu</div>
+                            </li>
+                            <li class="table-row">
+                              <div class="col col-1" data-label="Druh">Nealkoholické pivo</div>
+                              <div class="col col-2" data-label="Popis">méně než 0,40 %</div>
+                            </li>
+                            <li class="table-row">
+                              <div class="col col-1" data-label="Druh">Pivo se sníženým obsahem alkoholu</div>
+                              <div class="col col-2" data-label="Popis">0,41 % – 1,00 %</div>
+                            </li>
+                            <li class="table-row">
+                              <div class="col col-1" data-label="Druh">Stolní pivo</div>
+                              <div class="col col-2" data-label="Popis">1,01 % – 6,99 %</div>
+                            </li>
+                            <li class="table-row">
+                              <div class="col col-1" data-label="Druh">Výčepní pivo</div>
+                              <div class="col col-2" data-label="Popis">7,00 % – 10,99 %</div>
+                            </li>
+                            <li class="table-row">
+                                <div class="col col-1" data-label="Druh">Ležák</div>
+                                <div class="col col-2" data-label="Popis">11,00 % – 12,99 %</div>
+                              </li>
+                              <li class="table-row">
+                                <div class="col col-1" data-label="Druh">Speciální pivo</div>
+                                <div class="col col-2" data-label="Popis">13,00 % – 17,99 %</div>
+                              </li>
+                              <li class="table-row">
+                                <div class="col col-1" data-label="Druh">Porter</div>
+                                <div class="col col-2" data-label="Popis">více než 18 %</div>
+                              </li>
+                          </ul>
+
+                          <img src="../img/pivo.png" class="downImage" alt="Pivo" height="150" width="150">
+                    </div>
+
+                    <div class="col-5 col-delete">
+                        <img src="../img/pivo.png" class="rightImage" alt="Pivo">
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="row" id="vino">
+                    <div class="col-7 col-small">
+                        <h2>Víno</h2>
+
+                        <p>Víno je alkoholický nápoj, který se získává kvašením čerstvých hroznů (případně hroznového moštu). U nás v Evropské unii se smí víno vyrábět pouze z hroznů vinné révy. U vína je dáno, že obsah alkoholu musí přesahovat 8,5 %, povětšinou je to tedy více než u klasického piva. </p>
+                        <p>Víno se může dělit buď podle základního dělení, dle barvy, dle zbytkového cukru, anebo dle jakosti.</p>
+
+                        <h3>Základní druhy:</h3>
+
+                        <ul class="responsive-table">
+                            <li class="table-header">
+                              <div class="col col-1">Druh</div>
+                              <div class="col col-2">Popis</div>
+                            </li>
+                            <li class="table-row">
+                              <div class="col col-1" data-label="Druh">Víno</div>
+                              <div class="col col-2" data-label="Popis">Víno, které není nijak aromatizované a je neperlivé.</div>
+                            </li>
+                            <li class="table-row">
+                              <div class="col col-1" data-label="Druh">Likérové víno</div>
+                              <div class="col col-2" data-label="Popis">Víno, do nějž byl přidán alkohol. Objemová jednotka alkoholu můž být v rozmezí 15 – 22 %.</div>
+                            </li>
+                            <li class="table-row">
+                              <div class="col col-1" data-label="Druh">Šumivé víno</div>
+                              <div class="col col-2" data-label="Popis">Víno, které se získává prvotným, či druhotným kvašením. Po otevření láhvce z ní musí unikat oxid uhličitý tvořící přetlak minimálně 300 kPa.</div>
+                            </li>
+                            <li class="table-row">
+                              <div class="col col-1" data-label="Druh">Perlivé víno</div>
+                              <div class="col col-2" data-label="Popis">Víno, které opět obsahuje přetlak oxidu uhličitého, tentokrát v rozmezí 100 kPa až 250 kPa.</div>
+                            </li>
+                          </ul>
+
+                          <h3>Dle barvy:</h3>
+                          <ul class="responsive-table">
+                            <li class="table-header">
+                              <div class="col col-1">Barva</div>
+                              <div class="col col-2">Popis</div>
+                            </li>
+                            <li class="table-row">
+                              <div class="col col-1" data-label="Druh">Bílé víno</div>
+                              <div class="col col-2" data-label="Popis">Výroba probíhá za pomoci bílé moštové vinné révy, anebo z modrých odrůd vinné révy.</div>
+                            </li>
+                            <li class="table-row">
+                              <div class="col col-1" data-label="Druh">Růžové víno</div>
+                              <div class="col col-2" data-label="Popis">Výroba probíhá z modrých moštových odrůd.</div>
+                            </li>
+                            <li class="table-row">
+                              <div class="col col-1" data-label="Druh">Červené víno</div>
+                              <div class="col col-2" data-label="Popis">Výroba probíhá pouze z modrých hroznů – kvašení ale probíhá delší dobu.</div>
+                            </li>
+                            <li class="table-row">
+                              <div class="col col-1" data-label="Druh">Oranžové víno</div>
+                              <div class="col col-2" data-label="Popis">Toto víno je možné srovnat k vínu bílému, jen zrajícímu na slupkách.</div>
+                            </li>
+                          </ul>
+
+                          <h3>Dle zbytkového cukru:</h3>
+                          <p><em>Tato vína je možné dělit nadále na poddruhy tichá a šumivá vína, my si zde uvedeme příklad <strong>vína tichého</strong>, protože patří ke známějším.</em></p>
+                          <ul class="responsive-table">
+                            <li class="table-header">
+                              <div class="col col-1">Název</div>
+                              <div class="col col-2">Popis</div>
+                            </li>
+                            <li class="table-row">
+                              <div class="col col-1" data-label="Druh">Suché víno</div>
+                              <div class="col col-2" data-label="Popis">Méně než 4 g/l (9 g/l, jestliže je kyselost maximálně o 2 g/l nižší)</div>
+                            </li>
+                            <li class="table-row">
+                              <div class="col col-1" data-label="Druh">Polosuché víno</div>
+                              <div class="col col-2" data-label="Popis">4 g/l – 12 g/l (18 g/l, jestliže je kyselost maximálně o 2 g/l nižší)</div>
+                            </li>
+                            <li class="table-row">
+                              <div class="col col-1" data-label="Druh">Polosladké víno</div>
+                              <div class="col col-2" data-label="Popis">12 g/l – 45 g/l</div>
+                            </li>
+                            <li class="table-row">
+                              <div class="col col-1" data-label="Druh">Sladké víno</div>
+                              <div class="col col-2" data-label="Popis">Více než 45 g/l</div>
+                            </li>
+                          </ul>
+
+                          <img src="../img/vino.jpg" class="downImage" alt="Víno" height="300px" width="150px">
+                    </div>
+
+                    <div class="col-5">
+                        <img src="../img/vino.jpg" class="rightImage" alt="Víno">
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="row" id="lihoviny">
+                    <div class="col-7 col-small">
+                        <h2>Lihoviny/Destiláty</h2>
+
+                        <p>Lihoviny jsou již zpravidla silnější alkoholické nápoje, jejich procentuální obsah alkoholu je v rozmezí mezi 15 % – 79,5 %, nespadá sem pivo ani víno.</p>
+                        <p>Lihoviny se dělí podle způsobu zpracování a podle obsahu cukru</p>
+
+                        <h3>Z čeho se lihoviny vyrábí?</h3>
+                        <p>Povětšinou se lihoviny vyrábí ze tří základní surovin, buď <strong>škrobnatých surovin</strong> (brambory nebo obilí), <strong>cukernatých surovin</strong> (melasa, řepka, cukernaté plody) anebo z <strong>lihových tekutin</strong> (pivo, víno)</p>
+
+                        <p>Nebudeme si zde na webu přesně popisovat, jak probíhá výroba takového lihu, dá se o tom ale velmi pěkně počíst třeba na <a href="https://www.souhorky.cz/ftp/ucebnice/pv/1/lihoviny.htm" target="_blank">této stránce</a>.</p>
+
+                        <h3>Druhy lihovin/destilátů</h3>
+                        <ul class="responsive-table">
+                          <li class="table-header">
+                            <div class="col col-1">Název</div>
+                            <div class="col col-2">Popis</div>
+                          </li>
+                          <li class="table-row">
+                            <div class="col col-1" data-label="Druh">Vinný destilát</div>
+                            <div class="col col-2" data-label="Popis">Jedná se o produkt vyrobený z vína, které se opakovaně destiluje.</div>
+                          </li>
+                          <li class="table-row">
+                            <div class="col col-1" data-label="Druh">Brandy</div>
+                            <div class="col col-2" data-label="Popis">Výroba probíhá z vinného destilátu, který zrál v dubových nádržích.</div>
+                          </li>
+                          <li class="table-row">
+                            <div class="col col-1" data-label="Druh">Rum</div>
+                            <div class="col col-2" data-label="Popis">Lihovina, která vznikla alkoholickým kvašením a destilací melasy (případně cukrové třtiny). Povětšinou se rum produkuje v Karibiku, Austrálii či Indii. U nás v Čechách je známý hlavně rum tuzemský, ale mezi oblíbené patří již i právě rum karibský či kubánský. </div>
+                          </li>
+                          <li class="table-row">
+                            <div class="col col-1" data-label="Druh">Whisky</div>
+                            <div class="col col-2" data-label="Popis">Jedná se o destilát, který vznikl destilací obilnin a zrál v dřevěných sudech. Mezi nejznámější zástupce patří whisky skotská a irská, existuje ale i specifická <span class="href" onclick="ScrollWhiskey()">Tennessee Whiskey</span>.</div>
+                          </li>
+
+                          <li class="table-row">
+                            <div class="col col-1" data-label="Druh">Tequila</div>
+                            <div class="col col-2" data-label="Popis">První tequilu začali vyrábět španělští kolonizátoři. Vyrábí se především v mexickém státě Jalisco a je chráněna mexickými zákony. Na každé láhvi tequily musí být označení NOM (Norma Oficial Mexicana) a číslo, což představuje ochrannou známku udávající právě mexický zákon. K tequile existuje dokonce i pravidlo, jak by se správně měla pít. Toto pravidlo si popíšeme <span class="href" onclick="ScrollTequila()">níže</span>.</div>
+                          </li>
+
+                          <li class="table-row">
+                            <div class="col col-1" data-label="Druh">Gin</div>
+                            <div class="col col-2" data-label="Popis">Jedná se o destilát vznikající destilací obilné břečky a přidáním různých bylin. Dělí se na dvě skupiny, buď takzvaný <strong>Jenever</strong> – vyráběný periodickou destilací z jalovce a obilného destilátu, a <strong>Dry gin</strong> – vráběný kontinuální destilací z obilného destilátu a bylin.</div>
+                          </li>
+
+                          <li class="table-row">
+                            <div class="col col-1" data-label="Druh">Vodka</div>
+                            <div class="col col-2" data-label="Popis">Jedná se o lihovinu vyráběnou z obolí, výjimečně i z brambor. Vodka je asi nejznámější především v Rusku, kde jí zkonzumují až 17,28 litrů na osobu ročně, v čemž si drží prvenství ve světě. Její chuť je daná především délkou zrání v dubových sudech.</div>
+                          </li>
+                        </ul>
+
+                        <p>Zástupců lihovin existuje samozřejmě mnohem více, vypsal jsem zde ale ty nejznámější, abyste měli alespoň lehký přehled, co přesně do této skupiny spadá.</p>
+                        
+                        <span id="tequila"></span>
+                        <div class="warn">
+                        <h3>Jak pít tequilu?</h3>
+                        <p>Spousta lidí si myslí, že se tequila pije tak, že k ní zakusujete citron a jíte sůl, anebo dokonce pomeranč a skořici. Dejte si pozor, jedná se pouze o marketingový tah, takto se tequila nikdy nepije! Sloužilo to pouze proto, aby se tím zamaskovala chuť levných tequil.</p>
+                        <h3>Jak se tedy správně pije tequila?</h3>
+                        <p>K pití tequily není potřeba žádná <em>show</em>, nejlepší je totiž si zakoupit opravdovou a chutnou tequilu, kterou pijete nechlazenou a bez ledu, a určitě ne „na ex“ – tequila se usrkává a občas zapijí vodou.</p>
+                      </div>
+
+                      <span id="whiskey"></span>
+                      <div class="warn">
+                      <h3>Tennessee Whiskey</h3>
+                      <p>Aby se whiskey mohla nazývat Tennessee, je k tomu zapotřebí splnit následující pravidla:</p>
+                      <ol>
+                        <li>Tennessee Whiskey musí být vyrobena v oblesti Tennessee.</li>
+                        <li>Alespoň 51 % použitých surovin na výrobu musí tvořit kukuřice.</li>
+                        <li>V láhvi může mít maximálně 40 % alkoholu, aby zůstala zachována chuť obilnin.</li>
+                        <li>Je nutné, aby whiskey zrála v sudech vyrobených z amerického dubu.</li>
+                        <li>Tennessee Whiskey musí zrát minimálně 2 roky.</li>
+                      </ol>
+                    </div>
+
+                    <img src="../img/Rum.jpg" class="downImage" id="image-rum" alt="Rum" height="221" width="390">
+                    <img src="../img/vodka.jpg" class="downImage" alt="Vodka" height="375" width="225">
+                    </div>
+
+                    <div class="col-5">
+                        <img src="../img/Rum.jpg" class="rightImage" alt="Rum">
+                        <img src="../img/vodka.jpg" class="rightImage" alt="Vodka">
+                    </div>
+                </div>
+                <hr>
+
+                <div class="row" id="konak">
+                    <div class="col-7 col-small">
+                        <h2>Koňak</h2>
+
+                        <p>Koňak je vlastně specifickým druhem <strong>brandy</strong>, které patří mezi destiláty. Pro její specifikum jsem se ji však rozhodl zařadit zvlášť.</p>
+                        <p>Aby se destilát mohl nazývat koňak, musí splňovat tyto příšné podmínky:</p>
+                        <ol class="warn">
+                          <li>Musí pocházet z francouzského města Cognac.</li>
+                          <li>Musí být vyroben pouze z bílých odrůd vína Ugni Blanc, Folle Blanche či Colombard.</li>
+                          <li>Musí nejméně dva roky zrát v <strong>dubových sudech</strong>.</li>
+                        </ol>
+
+                        <img src="../img/konak.jpg" class="downImage" alt="Koňak" height="250" width="250">
+                    </div>
+
+                    <div class="col-5">
+                        <img src="../img/konak.jpg" class="rightImage" alt="Koňak" height="400" width="400">
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="row" id="medovina">
+                    <div class="col-7 col-small">
+                        <h2>Medovina</h2>
+                        <p>Medovina je velmi oblíbená pro svou sladkou chuť a také proto, že neobsahuje <em>vysoké množství alkoholu</em>. Vyrábí se z <strong>medu a vodu</strong (případně ovocné šťávy).</p>
+
+                        <h3>Druhy medoviny</h3>
+                        <ul class="responsive-table">
+                          <li class="table-header">
+                            <div class="col col-1">Název</div>
+                            <div class="col col-2">Popis</div>
+                          </li>
+                          <li class="table-row">
+                            <div class="col col-1" data-label="Druh">Metheglin</div>
+                            <div class="col col-2" data-label="Popis">Medovina s přidaným kořením.</div>
+                          </li>
+                          <li class="table-row">
+                            <div class="col col-1" data-label="Druh">Melomela</div>
+                            <div class="col col-2" data-label="Popis">Medovina, ve které se namísto vody používá zmiňovaná ovocná šťáva.</div>
+                          </li>
+                          <li class="table-row">
+                            <div class="col col-1" data-label="Druh">Hydromel</div>
+                            <div class="col col-2" data-label="Popis">Jedná se o slabou medovinu (naředěnou).</div>
+                          </li>
+                          <li class="table-row">
+                            <div class="col col-1" data-label="Druh">Včelovina</div>
+                            <div class="col col-2" data-label="Popis">Medovina, která kvasí v nizkých teplotách.</div>
+                          </li>
+
+                          <li class="table-row">
+                            <div class="col col-1" data-label="Druh">Dezertní medovina</div>
+                            <div class="col col-2" data-label="Popis">Medovina, v níž je přidán cukr, aromata či líh.</div>
+                          </li>
+
+                          <li class="table-row">
+                            <div class="col col-1" data-label="Druh">Medové pivo</div>
+                            <div class="col col-2" data-label="Popis">Nejedná se sice tak úplně o medovinu, spíše o pivo, do něhož se přidává med.</div>
+                          </li>
+                        </ul>
+
+                        <h3>Kvalita medoviny</h3>
+                        <p>Medovina nemá daná přesně pravidla, dle kterých byste mohli určit její kvalitu. Pokud se ale po jejím <strong>nalití do sklenice</strong> („panáku“) <strong>neusadí kal</strong>, jež medovina mnohdy má, je s největší pravděpodobností <strong>nekvalitní</strong>.</p>
+
+                        <img src="../img/medovina.jpg" class="downImage" alt="Medovina" height="250" width="250">
+                    </div>
+
+                    <div class="col-5">
+                        <img src="../img/medovina.jpg" class="rightImage" alt="Medovina" height="400" width="400">
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="row" id="burcak">
+                    <div class="col-7 col-small">
+                        <h2>Burčák</h2>
+                        <p>Burčák je z části zkvašený mošt z plodů vinné révy. Důležité u burčáku je, aby byl <strong>poměr alkoholu, cukru a kyseliny</strong> v takové souhře, že si zamilujeme jeho chuť.</p>
+                        <p>Jedná se opět o slabší alkohol s procentuálním obsahem mezi <em>1–7 %</em>. Bývá k dispozici několik dní po začátku kvašení moštu, protože se jedná o <strong>meziprodukt při výrobě vína</strong>.</p>
+
+                        <h3>Právní burčák</h3>
+                        <p>Je důležité si uvědomit, že slovem <strong>burčák</strong> může být označen pouze nápoj vyroben v daném roce od <em>1. 8. do 30. 11.</em></p>
+                        <h3>Druhy burčáku</h3>
+                        <ul class="responsive-table">
+                          <li class="table-header">
+                            <div class="col col-1">Název</div>
+                            <div class="col col-2">Popis</div>
+                          </li>
+                          <li class="table-row">
+                            <div class="col col-1" data-label="Druh">Červený burčák</div>
+                            <div class="col col-2" data-label="Popis">Vyráběn z modrých hroznů.</div>
+                          </li>
+                          <li class="table-row">
+                            <div class="col col-1" data-label="Druh">Žlutý burčák</div>
+                            <div class="col col-2" data-label="Popis">Vyráběn z bílého vína.</div>
+                          </li>
+                          <li class="table-row">
+                            <div class="col col-1" data-label="Druh">Růžový burčák</div>
+                            <div class="col col-2" data-label="Popis">Vyráběn opět z modrých hroznů stejným postupem jako burčák žlutý.</div>
+                          </li>
+                        </ul>
+
+                        <img src="../img/burcak.jpg" class="downImage" alt="Burčák" height="250" width="250">
+                    </div>
+
+                    <div class="col-5">
+                        <img src="../img/burcak.jpg" class="rightImage" alt="Burčák" height="400" width="400">
+                    </div>
+                </div>
+
+                <hr>
+                    
+                <div class="row" id="liker">
+                  <div class="col-7 col-small">
+                      <h2>Likér</h2>
+                     <p>Jedná se o sladký alkoholický nápoj, jež se mnohdy dochucuje třeba ovocem, smetanou či bylinkami. Likéry se vyrábějí již dlouhá staletí, původně patřily dokonce do bylinkářské medicíny.</p>
+                     <p>Název „likér“ pcohází z latinského slova <strong>liquifacere</strong>, které znamená „rozpustit se“.</p>
+
+                      <h2>Tatratea</h2>
+                      <p>Rozhodl jsem se, že uvedu jen jeden příklad likéru, který je velmi oblíbený. Konkrétně se jedná se o <strong>Tatratea, neboli tatranský čaj</strong>. Dalším známým likérem je třeba ještě malibu, griotka nebo „zelená“.</p>
+                      <p>Tatranský čaj se vyrábí na základě receptů z hor z <strong>bylinek a čaje</strong> (původní recept vymysleli lidé ve Vysokých Tatrách), které mu dodávají tak <strong>jemnou a výbornou chuť</strong>. Je oblíbený jak pro <em>čisté pití, tak pro míchání</em>.</p>
+                      <p>Extrakt z čaje a bylinek zraje v dubových sudech celkem osm týdnů. Tatratea nabízí celkem <strong>14 příchutí</strong>, které se liší i svým procentiálním obsahem alkoholu.</p>
+                      <p>Příchuť a láhev můžeme poznat podle barvy láhve, které jsou vždy specifické.</p>
+                      <h3>Druhy – čajové</h3>
+                      <ul class="responsive-table2">
+                        <li class="table-header">
+                          <div class="col col-1">Název</div>
+                          <div class="col col-2">Popis</div>
+                          <div class="col col-3">Barva láhve</div>
+                        </li>
+                        <li class="table-row">
+                          <div class="col col-1" data-label="Druh">22% Kokos</div>
+                          <div class="col col-2" data-label="Popis">Bílý čaj a kokosový extrakt</div>
+                          <div class="col col-3" data-label="Barva láhve">Bílá <div class="tatran tatran-kokos">
+                            <div class="tatran-dropdown">
+                              <img src="../img/Tatran/kokos.png" alt="tatran-kokos">
+                            </div>
+                          </div></div>
+                        </li>
+                        <li class="table-row">
+                          <div class="col col-1" data-label="Druh">32% Citrus</div>
+                          <div class="col col-2" data-label="Popis">Citrus a limetka</div>
+                          <div class="col col-3" data-label="Barva láhve">Světle zelená <div class="tatran tatran-citrus">
+                            <div class="tatran-dropdown">
+                              <img src="../img/Tatran/citrus.png" alt="tatran-citrus">
+                            </div>
+                          </div></div>
+                        </li>
+                        <li class="table-row">
+                          <div class="col col-1" data-label="Druh">42% Broskev</div>
+                          <div class="col col-2" data-label="Popis">Bílý a černý čaj s extraktem z broskví</div>
+                          <div class="col col-3" data-label="Barva láhve">Broskvová <div class="tatran tatran-broskev">
+                            <div class="tatran-dropdown">
+                              <img src="../img/Tatran/broskev.png" alt="tatran-broskev">
+                            </div>
+                          </div></div>
+                        </li>
+                        <li class="table-row">
+                          <div class="col col-1" data-label="Druh">52% Original</div>
+                          <div class="col col-2" data-label="Popis">Černý čaj a vysokohorské byliny</div>
+                          <div class="col col-3" data-label="Barva láhve">Černá <div class="tatran tatran-original">
+                            <div class="tatran-dropdown">
+                              <img src="../img/Tatran/original.png" alt="tatran-original">
+                            </div>
+                          </div></div>
+                        </li>
+                        <li class="table-row">
+                          <div class="col col-1" data-label="Druh">62% Lesní ovoce</div>
+                          <div class="col col-2" data-label="Popis">Černý čaj a extrakt z lesních plodů</div>
+                          <div class="col col-3" data-label="Barva láhve">Fialová <div class="tatran tatran-lesni">
+                            <div class="tatran-dropdown">
+                              <img src="../img/Tatran/lesni.png" alt="tatran-lesni">
+                            </div>
+                          </div></div>
+                        </li>
+                        <li class="table-row">
+                          <div class="col col-1" data-label="Druh">72% Zbrojnický</div>
+                          <div class="col col-2" data-label="Popis">Černý čaj a vysokohorské byliny s méně cukrem, avšak obohacený o chinový extrakt</div>
+                          <div class="col col-3" data-label="Barva láhve">Stříbrná <div class="tatran tatran-zbrojnicky">
+                            <div class="tatran-dropdown">
+                              <img src="../img/Tatran/zbrojnicky.png" alt="tatran-zbrojnicky">
+                            </div>
+                          </div></div>
+                        </li>
+                      </ul>
+                      <em>Podržte myš na barvě láhve (malý čtvereček) proč zobrazení vizuálu.</em>
+                      <h3>Druhy – ovocné</h3>
+                      <ul class="responsive-table2">
+                        <li class="table-header">
+                          <div class="col col-1">Název</div>
+                          <div class="col col-2">Popis</div>
+                          <div class="col col-3">Barva láhve</div>
+                        </li>
+                        <li class="table-row">
+                          <div class="col col-1" data-label="Druh">17% Mléko a čaj</div>
+                          <div class="col col-2" data-label="Popis">Varianta <em>Original</em> smíchaná se smatenou</div>
+                          <div class="col col-3" data-label="Barva láhve">Zlatá <div class="tatran tatran-mleko">
+                            <div class="tatran-dropdown">
+                              <img src="../img/Tatran/mleko.png" alt="tatran-mleko">
+                            </div>
+                          </div></div>
+                        </li>
+                        <li class="table-row">
+                          <div class="col col-1" data-label="Druh">27% Acai a arónie</div>
+                          <div class="col col-2" data-label="Popis">Bobule acai a aronie</div>
+                          <div class="col col-3" data-label="Barva láhve">Modrá <div class="tatran tatran-acai">
+                            <div class="tatran-dropdown">
+                              <img src="../img/Tatran/acai.png" alt="tatran-acai">
+                            </div>
+                          </div></div>
+                        </li>
+                        <li class="table-row">
+                          <div class="col col-1" data-label="Druh">37% Ibišek a červený čaj</div>
+                          <div class="col col-2" data-label="Popis">Červený čaj, ibišek a višně</div>
+                          <div class="col col-3" data-label="Barva láhve">Růžová <div class="tatran tatran-ibisek">
+                            <div class="tatran-dropdown">
+                              <img src="../img/Tatran/ibisek.png" alt="tatran-ibisek">
+                            </div>
+                          </div></div>
+                        </li>
+                        <li class="table-row">
+                          <div class="col col-1" data-label="Druh">47% Květový</div>
+                          <div class="col col-2" data-label="Popis">Luční květy, květy keřů a stromů, slazený medem</div>
+                          <div class="col col-3" data-label="Barva láhve">Žlutá <div class="tatran tatran-kvetovy">
+                            <div class="tatran-dropdown">
+                              <img src="../img/Tatran/kvetovy.png" alt="tatran-kvetovy">
+                            </div>
+                          </div></div>
+                        </li>
+                        <li class="table-row">
+                          <div class="col col-1" data-label="Druh">57% Šípek a rakytník</div>
+                          <div class="col col-2" data-label="Popis">Červený čaj obohacený o šípek a rakytník</div>
+                          <div class="col col-3" data-label="Barva láhve">Oranžová <div class="tatran tatran-sipek">
+                            <div class="tatran-dropdown">
+                              <img src="../img/Tatran/sipek.png" alt="tatran-sipek">
+                            </div>
+                          </div></div>
+                        </li>
+                        <li class="table-row">
+                          <div class="col col-1" data-label="Druh">67% Jablko a hruška</div>
+                          <div class="col col-2" data-label="Popis">Jablka a hrušky</div>
+                          <div class="col col-3" data-label="Barva láhve">Červená <div class="tatran tatran-jablko">
+                            <div class="tatran-dropdown">
+                              <img src="../img/Tatran/jalbko.png" alt="tatran-jablko">
+                            </div>
+                          </div></div>
+                        </li>
+                      </ul>
+                      <em>Podržte myš na barvě láhve (malý čtvereček) proč zobrazení vizuálu.</em>
+
+                      <h3>Druhy – Bylinné</h3>
+                      <ul class="responsive-table2">
+                        <li class="table-header">
+                          <div class="col col-1">Název</div>
+                          <div class="col col-2">Popis</div>
+                          <div class="col col-3">Barva láhve</div>
+                        </li>
+                        <li class="table-row">
+                          <div class="col col-1" data-label="Druh">35% Bylinný</div>
+                          <div class="col col-2" data-label="Popis">Bez cukru, extrakt rozinek, fíků a stévie, obsahuje 30 druhů bylin</div>
+                          <div class="col col-3" data-label="Barva láhve">Tmavě zelená <div class="tatran tatran-bylinny">
+                            <div class="tatran-dropdown">
+                              <img src="../img/Tatran/bylinny.png" alt="tatran-bylinny">
+                            </div>
+                          </div></div>
+                        </li>
+                        <li class="table-row">
+                          <div class="col col-1" data-label="Druh">35% Hořký</div>
+                          <div class="col col-2" data-label="Popis">Bez cukru, extrakt rozinek, fíků a stévie, obsahuje 30 druhů bylin</div>
+                          <div class="col col-3" data-label="Barva láhve">Hnědá <div class="tatran tatran-horky">
+                            <div class="tatran-dropdown">
+                              <img src="../img/Tatran/horky.png" alt="tatran-horky">
+                            </div>
+                          </div></div>
+                        </li>
+                      </ul>
+                      <em>Podržte myš na barvě láhve (malý čtvereček) proč zobrazení vizuálu.</em>
+
+                      <img src="../img/liker.JPG" class="downImage" alt="Likér" height="300" width="225">
+                      <img src="../img/tatran.jpg" class="downImage" id="image-tatran" alt="Tatran" height="200" width="400">
+                  </div>
+
+                  <div class="col-5">
+                      <img src="../img/liker.JPG" class="rightImage" alt="Likér" height="400" width="300">
+                      <img src="../img/tatran.jpg" class="rightImage" alt="Tatran" height="230" width="400">
+                  </div>
+              </div>
+
+              <hr>
+              <div class="wrap"></div>
+                
+            </div>
+            <div class="col-4 col-blocks">
+                <div class="row">
+                  <div id="blocks">
+                    <a href="http://www.p-centrum.cz/poradna-pro-alkoholove-a-jine-zavislosti/" target="_blank"><div class="block">
+                        <h2>Alkoholová <br>poradna</h2>
+                        <p>Nechte si poradit s alkoholem! Není potřeba se stydět!</p>
+                    </div></a>
+                    <a href="https://1er.cz/" target="_blank"><div class="block">
+                        <h2>Premier Wines <br>& Spirits</h2>
+                        <p>Zakupte si nejlepší alkohol!</p>
+                    </div></a>
+                    <a href="https://www.alkohol.cz/" target="_blank"><div class="block">
+                        <h2>Alkohol.cz</h2>
+                        <p>Všechen alkohol, na nějž si vzpomenete, na jednom místě!</p>
+                    </div></a>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+          <div id="blocksunder">
+            <a href="http://www.p-centrum.cz/poradna-pro-alkoholove-a-jine-zavislosti/"><div class="blockunder">
+                <h2>Alkoholová <br>poradna</h2>
+                <p>Nechte si poradit s alkoholem! Není potřeba se stydět!</p>
+            </div></a>
+            <a href="https://1er.cz/"><div class="blockunder">
+                <h2>Premier Wines <br>& Spirits</h2>
+                <p>Zakupte si nejlepší alkohol!</p>
+            </div></a>
+            <a href="https://www.alkohol.cz/"><div class="blockunder">
+                <h2>Alkohol.cz</h2>
+                <p>Všechen alkohol, na nějž si vzpomenete, na jednom místě!</p>
+            </div></a>
+        </div>
+  </div>
+
+    </div>
+
+    <div class="footer">
+      <div class="row">
+          <div class="col-8">
+              <p>Vytvořil Ondřej Petera v roce 2021.</p>
+          </div>
+
+          <div class="col-4">
+              <i class="fas fa-caret-square-up fa-2x" id="up" onclick="ScrollUp()"></i>
+          </div>
+      </div>
+  </div>
+</body>
+</html>
