@@ -92,6 +92,10 @@ hr {
     background-color: silver;
 }
 
+.pivo-table {
+    border: none;
+}
+
 @media screen and (max-width: 1600px){
     .rightImage{
         display: none;
