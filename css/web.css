@@ -181,7 +181,7 @@ width: 700px;
 
 @media only screen and (max-width: 600px){
     .container {
-        margin: 0;
+        margin-left: 10px;
     }
 
     #img-kocovina{
@@ -221,7 +221,7 @@ width: 700px;
 
     .col-small {
         width: 90vw;
-        flex: content;
+        flex: 100% !important;
     }
 
     .warn {
@@ -272,7 +272,7 @@ width: 700px;
 
 @media only screen and (min-width: 600px) and (max-width: 992px){
     .container {
-        margin: 0;
+        margin-left: 20px;
     }
 
     #img-kocovina{
@@ -311,7 +311,7 @@ width: 700px;
 
     .col-small {
         width: 90vw;
-        flex: content;
+        flex: 100% !important;
     }
     
     .wrap {
